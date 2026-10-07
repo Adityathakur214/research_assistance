@@ -1,0 +1,8 @@
+streamlit
+chromadb
+openai
+anthropic
+python-dotenv
+fpdf2
+pytest
+flake8
