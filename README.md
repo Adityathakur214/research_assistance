@@ -33,6 +33,7 @@ Make sure you have the following installed on your local machine:
 
 ### 2. Installation
 Clone the repository and set up the virtual environment:
+step by step
 
 ```bash
 # Clone the repo
