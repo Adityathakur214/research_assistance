@@ -59,7 +59,6 @@ Responses identify the URL associated with each relevant piece of evidence. Cita
 ## 🏗️ 4. System Architecture
 The architecture consists of two connected workflows: document ingestion and question answering.
 
-```mermaid
 flowchart TD
     A[User submits URLs] --> B[n8n Webhook]
     B --> C[HTTP Request: Fetch web pages]
@@ -79,7 +78,8 @@ flowchart TD
     N --> P[Answer with source citations]
     O --> Q[Display fallback]
 
-    🧰 5. Technology Stack
+ 
+ 🧰 5. Technology Stack
 Python: Application logic, backend processing, and RAG pipeline.
 
 n8n: Visual workflow automation, webhook orchestration, and HTML scraping.
