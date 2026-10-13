@@ -14,9 +14,9 @@
         -448,
         -176
       ],
-      "id": "7dabb524-f782-4fdd-bb3a-399ace1af525",
+      "id": "Your_id_here",
       "name": "Webhook",
-      "webhookId": "c8c4b95b-464c-43c9-8d10-1401d4ad309f"
+      "webhookId": "Your_webhook_id_here"
     },
     {
       "parameters": {
@@ -29,7 +29,7 @@
         -128,
         -96
       ],
-      "id": "eea51e4d-6a20-457f-97a8-8bfcf1d652b1",
+      "id": "Your_id_here",
       "name": "HTTP Request"
     },
     {
@@ -52,7 +52,7 @@
         192,
         -176
       ],
-      "id": "a8243865-d453-4f60-a1e0-66b26f725f68",
+      "id": "Your_id_here",
       "name": "HTML"
     }
   ],
@@ -86,9 +86,10 @@
     "executionOrder": "v1",
     "binaryMode": "separate"
   },
-  "versionId": "c534c401-6546-434f-a0b6-c4c03f89cdc7",
+  "versionId": "Your_version_id_here",
   "meta": {
-    "instanceId": "e067379bfb5850b2ace02e56df5789aa7d2c0d3ec62cd5a5a7d75c32e30830ef"
+    "instanceId": "Your_instance_id_here",
+    "workflowId": "Your_workflow_id_here"
   },
   "nodeGroups": [],
   "id": "pnN8p9KpPaE3qCIM",
