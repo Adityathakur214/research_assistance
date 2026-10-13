@@ -1,0 +1,96 @@
+{
+  "name": "Research assistant",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "scrape-url",
+        "responseMode": "lastNode",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2.2,
+      "position": [
+        -448,
+        -176
+      ],
+      "id": "7dabb524-f782-4fdd-bb3a-399ace1af525",
+      "name": "Webhook",
+      "webhookId": "c8c4b95b-464c-43c9-8d10-1401d4ad309f"
+    },
+    {
+      "parameters": {
+        "url": "={{ $json.body.url }}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.5,
+      "position": [
+        -128,
+        -96
+      ],
+      "id": "eea51e4d-6a20-457f-97a8-8bfcf1d652b1",
+      "name": "HTTP Request"
+    },
+    {
+      "parameters": {
+        "operation": "extractHtmlContent",
+        "extractionValues": {
+          "values": [
+            {
+              "key": "text",
+              "cssSelector": "p",
+              "returnArray": true
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.html",
+      "typeVersion": 1.2,
+      "position": [
+        192,
+        -176
+      ],
+      "id": "a8243865-d453-4f60-a1e0-66b26f725f68",
+      "name": "HTML"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Webhook": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP Request": {
+      "main": [
+        [
+          {
+            "node": "HTML",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": true,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate"
+  },
+  "versionId": "c534c401-6546-434f-a0b6-c4c03f89cdc7",
+  "meta": {
+    "instanceId": "e067379bfb5850b2ace02e56df5789aa7d2c0d3ec62cd5a5a7d75c32e30830ef"
+  },
+  "nodeGroups": [],
+  "id": "pnN8p9KpPaE3qCIM",
+  "tags": []
+}
